@@ -195,6 +195,10 @@ a {
     border: 1px;
 }
 
+.loupe-boutton {
+    display: none;
+}
+
 .city-search {
     border: 1px white;
     font-weight: 700;
@@ -262,11 +266,6 @@ a {
 }
 
 .A-propos {
-    display: flex;
-    flex-direction: column;
-}
-
-.Nos-hébergements {
     display: flex;
     flex-direction: column;
 }
@@ -405,34 +404,34 @@ a {
     margin-bottom: 5px;
 }
 
-.activités-à-marseille {
+.activites-a-marseille {
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.activités-à-marseille h2 {
+.activites-a-marseille h2 {
     margin: 0px;
     font-size: 22px;
 }
 
-.activités-cards-container {
+.activites-cards-container {
     gap: 30px;
     display: flex;
     flex-direction: row;
 }
 
-.activités-card {
+.activites-card {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     width: 100%;
 }
 
-.activités-cards-container a {
+.activites-cards-container a {
     width: calc(25% - 1.4em);
 }
 
-.activités-card img {
+.activites-card img {
    display: flex;
    flex-direction: column;
    object-fit: cover;
@@ -458,7 +457,7 @@ h2 {
     margin: 0px;
 }
 
-.hebergements-et-activités {
+.hebergements-et-activites {
     gap: 35px;
     display: flex;
     flex-direction: column;
@@ -483,19 +482,23 @@ h2 {
     font-size: 18px;
 }
 
-.loupe-boutton {
-    display: none;
-}
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: baseline;
+    }
+
+    .loupe-boutton {
+        display: none;
+    }
+   
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -527,11 +530,11 @@ h2 {
         font-size: 13px;
     }
 
-    .activités-cards-container {
+    .activites-cards-container {
         width: 100%;
     }
 
-    .activités-card img {
+    .activites-card img {
         display: flex;
         flex-direction: column;
         object-fit: cover;
@@ -541,11 +544,11 @@ h2 {
         height: 200px;
     }
 
-    .activités-card {
+    .activites-card {
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
 
-    .activités-cards-container a {
+    .activites-cards-container a {
         width: 25%;
     }
 
@@ -553,19 +556,8 @@ h2 {
         display: flex;
         height: 30px;
     }
-
-    .filter-bar {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: baseline;
-    }
-
-    .loupe-boutton {
-        display: none;
-    }
-
 }
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     .main-container{
@@ -675,17 +667,17 @@ h2 {
         background-color: white;
     }
 
-    .activités-cards-container {
+    .activites-cards-container {
         flex-direction: column;
         gap: 15px;
     }
 
-    .activités-cards-container a {
+    .activites-cards-container a {
         width: 100%;
         height: calc(25% - 1.4em);
         }
 
-    .activités-cards-container img {
+    .activites-cards-container img {
         height: 141px;
     }
 
